@@ -107,6 +107,21 @@
 		} else {
 			$('#home').parallax('50%', 0.1);
 		}
+		
+		/* ---------------------------------------------- /*
+		 * FAQ hover animation
+		/* ---------------------------------------------- */
+		
+		$(".iconbox-desc").hide();
+
+		$(".iconbox").hover(
+			function() {
+				$(this).find(".iconbox-desc").show();
+				$(this).find(".iconbox-title").css({ 'color':'#3498db', 'font-size': '105%' });	
+			}, function() {
+				$(".iconbox-desc").hide();
+			}
+		)
 
 
 		/* ---------------------------------------------- /*
